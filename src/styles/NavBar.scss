@@ -1,0 +1,58 @@
+@import "partials/variables.scss";
+
+h1 {
+  display: block; font-size: 2em; margin-top: 0.67em; margin-bottom: 0.67em; margin-left: 0; margin-right: 0; font-weight: bold;
+}
+
+.nav-bar {
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  // z-index: 300000;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: $nav-bar-color;
+  margin: 0px;
+  height: 65px;
+
+  .nav-item-white {
+    color: white;
+    cursor: pointer;
+  }
+
+  #nav-right {
+    padding-right: 1.0em;
+    // margin-top: 0.5em;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+    h1 {
+      margin: 1em;
+      font-size: 20px;
+      }
+    }
+  }
+
+  // .dropdown {
+  //   position: absolute;
+  //   left: 50%;
+  //   transform: translatex(50%) rotatex(90deg) scale(0);
+  //   transform-origin: 0 0;
+  //   border-radius: 0.35em;
+  //   border: $black solid 1px;
+  //   background-color: rgba($white, 0.75);
+  //   visibility: hidden;
+  //   opacity: 0;
+  //   transition: all 200ms linear;
+  //   color: $dropdown-color;
+  //   &.isOpen {
+  //     transform: translatex(-50%);
+  //     visibility: visible;
+  //     opacity: 1;
+  //   }
+  // }

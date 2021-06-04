@@ -1,0 +1,30 @@
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  background-color: blue;
+  margin: 0px;
+  height: 65px;
+}
+.nav-bar .nav-item-white {
+  color: white;
+  cursor: pointer;
+}
+.nav-bar #nav-right {
+  padding-right: 1em;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: white;
+}
+.nav-bar a h1 {
+  margin: 1em;
+  font-size: 20px;
+}
+
+/*# sourceMappingURL=NavBar.css.map */

@@ -1,20 +1,23 @@
 <template>
   <div class="home">
-    <Text />
+    <h2>Welcome to Your True Nature</h2>
+    Mindfulness Based Therapy
+    <div class="name-text">
+      Lana Marie Willow MA <br />
+      Registered Clinical Counsellor
+    </div>
+    <div id="home-image-lana-marie">
+      <img src="../assets/lana-marie.jpeg" />
+    </div>
   </div>
 </template>
 
 <script>
-import Text from "@/components/Text.vue"
 
 export default {
   name: "Home",
-  components: {
-    Text,
-  },
+  components: {},
 };
 </script>
 
-<style scoped>
-
-</style>
+<style scoped src="../styles/css/Home.css" lang="css"></style>

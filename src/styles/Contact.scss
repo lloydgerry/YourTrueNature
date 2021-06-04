@@ -1,0 +1,42 @@
+@import "partials/variables.scss";
+
+h1 {
+  display: block; font-size: 2em; margin-top: 0.67em; margin-bottom: 0.67em; margin-left: 0; margin-right: 0; font-weight: bold;
+}
+
+.contact {
+  padding-left: 1em;
+  margin: 1em;
+  padding: 1em;
+}
+
+.form-control {
+  border-radius: 34px;
+  border: 2px solid #e6e6e6;
+  width: 25%;
+  height: 2.5em;
+  margin: 1em;
+}
+
+#name {
+  padding-left: 0.5em;
+}
+
+#email {
+  width: 40%;
+  padding-left: 0.5em;
+}
+
+#message {
+  width: 40%;
+  height: 25%;
+}
+
+#form-submit-button {
+  background-color: blue;
+  color: white;
+  margin-top: 1.5em;
+  padding-left: 0.5em;
+  border: 2px solid #e6e6e6;
+  width: 10em;
+}
