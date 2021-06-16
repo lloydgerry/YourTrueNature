@@ -1,3 +1,13 @@
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-top: 0.67em;
+  margin-bottom: 0.67em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
 .nav-bar {
   position: fixed;
   top: 0;
@@ -10,6 +20,8 @@
   background-color: blue;
   margin: 0px;
   height: 65px;
+  font-size: 120%;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 .nav-bar .nav-item-white {
   color: white;
@@ -17,6 +29,9 @@
 }
 .nav-bar #nav-right {
   padding-right: 1em;
+}
+.nav-bar #nav-left {
+  padding-left: 1em;
 }
 .nav-bar a {
   text-decoration: none;

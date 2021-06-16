@@ -4,17 +4,23 @@ h1 {
   display: block; font-size: 2em; margin-top: 0.67em; margin-bottom: 0.67em; margin-left: 0; margin-right: 0; font-weight: bold;
 }
 
+input {
+  font-size: 110%;
+}
+
 .contact {
   padding-left: 1em;
-  margin: 1em;
-  padding: 1em;
+  margin: .75em;
+  padding: .75em;
+  font-family: $primary-font-family;
+  font-size: 120%;
 }
 
 .form-control {
   border-radius: 34px;
   border: 2px solid #e6e6e6;
   width: 25%;
-  height: 2.5em;
+  height: 3.5em;
   margin: 1em;
 }
 
@@ -27,9 +33,12 @@ h1 {
   padding-left: 0.5em;
 }
 
-#message {
+#message-box {
   width: 40%;
-  height: 25%;
+  height: 30%;
+  padding-left: 0.5em;
+  padding-top: 1em;
+  font-size: 110%;
 }
 
 #form-submit-button {
@@ -38,5 +47,8 @@ h1 {
   margin-top: 1.5em;
   padding-left: 0.5em;
   border: 2px solid #e6e6e6;
-  width: 10em;
+  border-radius: 25px;
+  width: 15em;
+  height: 3.5em;
+  font-size: 90%;
 }

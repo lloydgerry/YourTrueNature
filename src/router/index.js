@@ -17,16 +17,22 @@ const routes = [
       import(/* webpackChunkName: "about" */ "../views/About.vue"),
   },
   {
-    path: "/services",
-    name: "Services",
+    path: "/approaches",
+    name: "Approaches",
     component: () =>
-      import(/* webpackChunkName: "services" */ "../views/Services.vue"),
+      import(/* webpackChunkName: "services" */ "../views/Approaches.vue"),
   },
   {
     path: "/contact",
     name: "Contact",
     component: () =>
       import(/* webpackChunkName: "services" */ "../views/Contact.vue"),
+  },
+  {
+    path: "/services",
+    name: "Services",
+    component: () =>
+      import(/* webpackChunkName: "services" */ "../views/Services.vue"),
   },
 ];
 

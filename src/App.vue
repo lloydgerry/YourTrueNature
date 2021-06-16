@@ -17,4 +17,8 @@ export default {
 };
 </script>
 
-<style src="./styles/css/App.css" lang="css"></style>
+<style src="./styles/css/App.css" lang="css">
+.app {
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+</style>

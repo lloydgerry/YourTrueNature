@@ -9,7 +9,6 @@ h1 {
   top:0;
   left: 0;
   right: 0;
-  // z-index: 300000;
   display: flex;
   justify-content: space-between;
   align-content: center;
@@ -17,6 +16,8 @@ h1 {
   background-color: $nav-bar-color;
   margin: 0px;
   height: 65px;
+  font-size: 120%;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 
   .nav-item-white {
     color: white;
@@ -25,7 +26,10 @@ h1 {
 
   #nav-right {
     padding-right: 1.0em;
-    // margin-top: 0.5em;
+  }
+
+  #nav-left {
+    padding-left: 1.0em;
   }
 
   a {

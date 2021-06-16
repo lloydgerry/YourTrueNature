@@ -1,6 +1,13 @@
 <template>
   <div id="nav" class="nav-bar">
     <div id="nav-left">
+      <ul class="nav-item-white">
+        <router-link to="/approaches">Approaches</router-link>
+        |
+        <router-link to="/services">Services</router-link>
+      </ul>
+    </div>
+    <div id="nav-centre">
       <router-link to="/">
         <h1 class="nav-item-white">Your True Nature</h1>
       </router-link>
@@ -8,8 +15,6 @@
     <div id="nav-right">
       <ul class="nav-item-white">
         <router-link to="/about">About</router-link>
-        |
-        <router-link to="/services">Services</router-link>
         |
         <router-link to="/contact">Contact</router-link>
       </ul>
