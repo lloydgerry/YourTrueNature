@@ -21,12 +21,44 @@ export default {
 };
 </script>
 
-<style scoped src="../styles/css/Home.css" lang="css">
+<style scoped lang="css">
 .home-title {
   text-align: center;
 }
 
-.body#nav-image {
-  background-image: url(assets/background-form.jpg);
+h1 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+h2 {
+  display: block;
+  font-size: 1.5em;
+  margin-top: 0.83em;
+  margin-bottom: 0.83em;
+  margin-left: 0;
+  margin-right: 0;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.home {
+  padding: 1em;
+}
+
+#home-image-lana-marie {
+  border: 10px;
 }
 </style>

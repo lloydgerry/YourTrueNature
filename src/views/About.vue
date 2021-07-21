@@ -1,9 +1,9 @@
 <template>
   <div class="about">
     <h1>About Lana Marie</h1>
+    <img id="image-lana" src="../assets/lana-marie.jpeg" />
     <br />
     <div class="about-lana">
-      <img id="image-lana" src="../assets/lana-marie.jpeg" />
       <p>
         LANA MARIE WILLOW, MA is a full registered member of the BC Association
         of Clinical Counsellors and holds degrees in both Psychology and
@@ -381,8 +381,24 @@ export default {
 };
 </script>
 
-<style scoped src="../styles/css/About.css" lang="css">
+<style scoped lang="css">
 .about {
+  align-items: start;
+  text-align: left;
+  word-break: normal;
+  padding-left: 1em;
   font-family: Avenir, Arial, Helvetica, sans-serif;
+}
+
+.about-lana {
+  margin: 10px;
+}
+
+#image-lana {
+  border-radius: 10px;
+  float: left;
+  width: 10%;
+  height: 10%;
+  margin-right: 1em;
 }
 </style>
