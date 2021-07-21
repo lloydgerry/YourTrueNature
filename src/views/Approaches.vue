@@ -24,6 +24,8 @@ h1 {
 }
 
 .approaches {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
   padding-left: 1em;
+  font-size: 1.25vw;
 }
 </style>

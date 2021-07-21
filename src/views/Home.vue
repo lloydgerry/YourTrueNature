@@ -1,15 +1,15 @@
 <template>
   <div class="home">
     <body id="nav-image">
-    <h2 class="home-title">Welcome to Your True Nature</h2>
-    Mindfulness Based Therapy
-    <div class="name-text">
-      Lana Marie Willow MA <br />
-      Registered Clinical Counsellor
-    </div>
+      <h2 class="home-title">Welcome to Your True Nature</h2>
+      Mindfulness Based Therapy
+      <div class="name-text">
+        Lana Marie Willow MA <br />
+        Registered Clinical Counsellor
+      </div>
     </body>
-    <div id="home-image-lana-marie">
-      <img src="../assets/lana-marie.jpeg" />
+    <div class="image-radius">
+      <img id="home-image-lana-marie" src="../assets/lana-marie.jpeg" />
     </div>
   </div>
 </template>
@@ -56,9 +56,15 @@ p {
 
 .home {
   padding: 1em;
+  font-size: 1.25vw;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
 #home-image-lana-marie {
+  width: 15%;
+  height: 15%;
   border: 10px;
+  border-radius: 10%;
+  padding: 1%;
 }
 </style>

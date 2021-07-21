@@ -368,10 +368,10 @@ export default {
   components: {},
   head: {
     // creates a title tag in header.
-    title () {
+    title() {
       return {
         inner: this.title,
-      }
+      };
     },
     meta: [
       // creates a meta description tag in header.
@@ -387,6 +387,7 @@ export default {
   text-align: left;
   word-break: normal;
   padding-left: 1em;
+  font-size: 1.25vw;
   font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
@@ -395,7 +396,7 @@ export default {
 }
 
 #image-lana {
-  border-radius: 10px;
+  border-radius: 10%;
   float: left;
   width: 10%;
   height: 10%;

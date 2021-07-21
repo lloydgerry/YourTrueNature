@@ -134,14 +134,14 @@ input {
   margin: 0.75em;
   padding: 0.75em;
   font-family: Avenir, Arial, Helvetica, sans-serif;
-  font-size: 110%;
+  font-size: 1.25vw;
 }
 
 .form-control {
   border-radius: 34px;
   border: 2px solid #e6e6e6;
   width: 25%;
-  height: 3.5em;
+  height: 3em;
   margin: 1em;
 }
 
@@ -159,8 +159,8 @@ input {
   height: 30%;
   padding-left: 0.5em;
   padding-top: 1.5em;
-  font-size: 110%;
   font-family: Avenir, Arial, Helvetica, sans-serif;
+  font-size: 110%;
 }
 
 #form-submit-button {
@@ -172,7 +172,7 @@ input {
   border-radius: 25px;
   width: 15em;
   height: 3.5em;
-  font-size: 90%;
+  font-size: 110%;
 }
 
 # .fade-enter-active,

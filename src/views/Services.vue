@@ -104,5 +104,7 @@ p {
 
 .services {
   margin-left: 1em;
+  font-size: 1.25vw;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 </style>

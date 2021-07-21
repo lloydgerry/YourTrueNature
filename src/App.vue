@@ -32,7 +32,7 @@ export default {
   /* move page down height of NavBar */
 }
 
-#image-radius {
+.image-radius {
   border-radius: 10px;
 }
 
