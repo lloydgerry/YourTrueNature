@@ -4,20 +4,22 @@ const bodyParser = require("body-parser");
 
 const app = express();
 
+//loads .env for server
 require("dotenv").config();
 
 // Serve all the files in '/dist' directory
 app.use(express.static("dist"));
+//form packages
 app.use(cors());
 app.use(bodyParser.json());
 
 const sendEmail = require("./helpers/sendEmailFromContactForm");
 
-// Access the parse results as request.body
+// Handle the post from contact form and send email
 app.post("/sendContactMessage", function (request, response) {
   let formMessage = request.body.formData;
   try {
-    response = "Request received";
+    response.send = "Request received";
     sendEmail(formMessage);
   } catch (error) {
     console.log(`Send contact message had an error:  ${error}`);

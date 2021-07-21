@@ -34,7 +34,7 @@ const sendEmail = (messageObject) => {
 
   let mailOptions = {
     from: email,
-    to: "lloyd.gerry@gmail.com",
+    to: "fake.lloyd.gerry@gmail.com",
     //to: "lana@yourtruenature.ca",
     subject: `YourTrueNature Contact Form Submission from ${name}`,
     text: messageBody,

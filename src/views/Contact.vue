@@ -1,75 +1,77 @@
 <template>
   <div class="contact">
     <div>
-      <transition name="fade" mode="out-in">
+      <h1 class="form-h1">Contact us</h1>
+      <transition name="fade">
         <div v-if="sent">
-          <p>Thanks</p>
+          <p id="sentMessage">
+            Thanks, we will get back to you as soon as possible!
+          </p>
         </div>
       </transition>
-    </div>
-    <div id="form" v-if="!sent" @submit.prevent="submitForm">
-      <h1 class="form-h1">Contact us</h1>
-      <form
-        id="contact-form"
-        class="form"
-        method="POST"
-        action="sendContactMessage"
-      >
-        <div class="form-group">
-          <label for="Name" class="label">Name</label>
-          <div class="input-group">
-            <input
-              type="text"
-              id="name"
-              name="Name"
-              v-model="form.name"
-              class="form-control"
-              placeholder="Your Name"
-              required
-            />
-          </div>
+
+      <div id="form" v-if="!sent" @submit.prevent="submitForm">
+        <form
+          id="contact-form"
+          class="form"
+          method="POST"
+          action="sendContactMessage"
+        >
           <div class="form-group">
-            <label for="Email" class="label">Email</label>
+            <label for="Name" class="label">Name</label>
             <div class="input-group">
               <input
-                type="email"
-                id="email"
-                name="Email"
-                v-model="form.email"
+                type="text"
+                id="name"
+                name="Name"
+                v-model="form.name"
                 class="form-control"
-                width="25%"
-                maxlength="150"
-                placeholder="Your Email Address"
+                placeholder="Your Name"
                 required
               />
             </div>
-          </div>
-          <div class="form-group">
-            <label for="Message" class="label">Your message</label>
-            <div class="input-group">
-              <textarea
-                name="Message"
-                class="form-control"
-                v-model="form.message"
-                id="message-box"
-                rows="6"
-                maxlength="3000"
-                placeholder="What would you like to say?"
-                required
-              ></textarea>
+            <div class="form-group">
+              <label for="Email" class="label">Email</label>
+              <div class="input-group">
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  v-model="form.email"
+                  class="form-control"
+                  width="25%"
+                  maxlength="150"
+                  placeholder="Your Email Address"
+                  required
+                />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="Message" class="label">Your message</label>
+              <div class="input-group">
+                <textarea
+                  name="Message"
+                  class="form-control"
+                  v-model="form.message"
+                  id="message-box"
+                  rows="6"
+                  maxlength="3000"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group">
+              <button
+                id="form-submit-button"
+                class="form-button"
+                @submit.prevent="submitForm"
+              >
+                Send
+              </button>
             </div>
           </div>
-          <div class="form-group">
-            <button
-              id="form-submit-button"
-              class="form-control, form-button"
-              @submit.prevent="submitForm"
-            >
-              Send
-            </button>
-          </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
   </div>
 </template>
@@ -93,16 +95,14 @@ export default {
   }),
   methods: {
     submitForm: function () {
-      axios
-        .post("http://localhost:3000/sendContactMessage", {
+      try {
+        axios.post("http://localhost:3000/sendContactMessage", {
           formData: this.form,
-        })
-        .then((response) => {
-          if (response) {
-            this.sent = true;
-          }
-        })
-        .catch((error) => console.log("Error from submitForm: " + error));
+        });
+        this.sent = true;
+      } catch (error) {
+        console.log("Error from submitForm: " + error);
+      }
     },
   },
   components: {},
@@ -124,19 +124,9 @@ export default {
 };
 </script>
 
-<style scoped lang="css" > 
-h1 {
-  display: block;
-  font-size: 2em;
-  margin-top: 0.67em;
-  margin-bottom: 0.67em;
-  margin-left: 0;
-  margin-right: 0;
-  font-weight: bold;
-}
-
+<style scoped lang="css">
 input {
-  font-size: 110%;
+  font-size: 100%;
 }
 
 .contact {
@@ -144,7 +134,7 @@ input {
   margin: 0.75em;
   padding: 0.75em;
   font-family: Avenir, Arial, Helvetica, sans-serif;
-  font-size: 120%;
+  font-size: 110%;
 }
 
 .form-control {
@@ -168,8 +158,9 @@ input {
   width: 40%;
   height: 30%;
   padding-left: 0.5em;
-  padding-top: 1em;
+  padding-top: 1.5em;
   font-size: 110%;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
 }
 
 #form-submit-button {
@@ -182,5 +173,13 @@ input {
   width: 15em;
   height: 3.5em;
   font-size: 90%;
+}
+
+# .fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
 }
 </style>
