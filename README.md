@@ -5,9 +5,13 @@
 npm install
 ```
 
-### Compiles and hot-reloads for development
+### Compiles and hot-reloads for front-end (vue) development
 ```
 npm run serve
+```
+### Run backend Node server
+```
+npm start
 ```
 
 ### Compiles and minifies for production
