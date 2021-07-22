@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <body id="nav-image">
+    <body id="home-body">
       <h2 class="home-title">Welcome to Your True Nature</h2>
       Mindfulness Based Therapy
       <div class="name-text">
@@ -14,7 +14,8 @@
   </div>
 </template>
 
-<script>
+<script> 
+
 export default {
   name: "Home",
   components: {},
@@ -22,6 +23,29 @@ export default {
 </script>
 
 <style scoped lang="css">
+.home {
+  position: relative;
+  padding: 1em;
+  font-size: 1.25vw;
+  font-family: Avenir, Arial, Helvetica, sans-serif;
+  height: 100vh;
+  align-items: center;
+}
+
+.home::before {
+  content: "";
+  position: absolute;
+  background-image: url(../assets/background-form.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.75;
+}
+
 .home-title {
   text-align: center;
 }
@@ -54,17 +78,22 @@ p {
   margin-right: 0;
 }
 
-.home {
-  padding: 1em;
-  font-size: 1.25vw;
-  font-family: Avenir, Arial, Helvetica, sans-serif;
+#home-body {
+  margin-top: 10%;
+  color: black;
+  text-align: center;
+  position: relative;
 }
 
 #home-image-lana-marie {
+  margin-left: auto;
+  margin-right: auto;
   width: 15%;
   height: 15%;
   border: 10px;
   border-radius: 10%;
   padding: 1%;
+  display: block;
+  position: relative;
 }
 </style>

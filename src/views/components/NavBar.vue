@@ -57,7 +57,7 @@ h1 {
   justify-content: space-between;
   align-content: center;
   align-items: center;
-  background-color: blue;
+  background-color: black;
   margin: 0px;
   height: 65px;
   font-size: 120%;

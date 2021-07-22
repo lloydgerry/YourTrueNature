@@ -164,7 +164,7 @@ input {
 }
 
 #form-submit-button {
-  background-color: blue;
+  background-color: black;
   color: white;
   margin-top: 1.5em;
   padding-left: 0.5em;
@@ -172,7 +172,7 @@ input {
   border-radius: 25px;
   width: 15em;
   height: 3.5em;
-  font-size: 110%;
+  font-size: 105%;
 }
 
 # .fade-enter-active,
